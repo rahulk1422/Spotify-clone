@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="icon" type="img/image/x-icon" href="img/fevicon.png">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- font awsome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- remix-icon CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="music-container">
+            <!-- side-nav-bar -->
+            <div class="side-bar">
+                <div class="top">
+                    <i class="ri-home-5-fill" id="home-icon"></i>
+                    <i class="ri-search-line"></i>
+                </div>
+                <div class="bottom">
+                    <i class="ri-building-2-line"></i>
+                    <i class="ri-heart-fill" id="heart-icon"></i>
+                    <i class="ri-bookmark-line" id="bookmark-icon"></i>
+                    <div class="img"></div>
+                    <i class="ri-music-2-line" id="music-icon"></i>
+                </div>
+            </div>
+
+            <!-- main-bar  -->
+            <div class="main-bar">
+                <!-- nav-bar  -->
+                <div class="navbar">
+                    <div class="top-nav">
+                        <div class="icon">
+                            <i class="ri-arrow-left-s-line"></i>
+                            <i class="ri-arrow-right-s-line"></i>
+                        </div>
+                        <div class="right-content">
+                            <button class="c-1">Explore Premium</button>
+                            <button class="c-2"><i class="ri-arrow-down-circle-line"></i>Install App</button>
+                            <i class="ri-notification-4-line"></i>
+                            <i class="ri-user-line"></i>
+                        </div>
+                    </div>
+                    <div class="bottom-nav">
+                        <button class="active">All</button>
+                        <button>Music</button>
+                        <button>Podcasts</button>
+                    </div>
+                </div>
+
+                <!-- music-section  -->
+                <div class="music">
+                    <div class="music-list">
+                        <div class="list-1">
+                            <div class="list-frame">
+                                <div class="img" id="icon"><i class="ri-heart-fill" id="heart-icon"></i></div>
+                                <div class="text">
+                                    <p>Liked Songs</p>
+
+                                </div>
+                                 <div class="play-btn" data-song="music/128-Husn - Anuv Jain 128 Kbps.mp3">
+                                        <div class="icon">
+                                            <i class="ri-play-fill"></i>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="list-frame">
+                                <div class="img"><img src="img/music1.jpg" alt="music"></div>
+                                <div class="text">
+                                    <p>Pulkari</p>
+                                </div>
+                                <div class="play-btn" data-song="music/128-Badaami Rang - Nikk 128 Kbps.mp3">
+                                    <div class="icon">
+                                        <i class="ri-play-fill"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list-frame">
+                                <div class="img"><img src="img/music2.jpg" alt=""></div>
+                                <div class="text">
+                                    <p>Hosh</p>
+                                </div>
+                                <div class="play-btn" data-song="music/128-Chaar Chudiyaan - Nikk 128 Kbps.mp3">
+                                    <div class="icon">
+                                        <i class="ri-play-fill"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list-frame">
+                                <div class="img"><img src="img/music3.jpg" alt=""></div>
+                                <div class="text">
+                                    <p>wish</p>
+                                </div>
+                                <div class="play-btn" data-song="music/128-Hosh - Nikk 128 Kbps.mp3">
+                                    <div class="icon">
+                                        <i class="ri-play-fill"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-2">
+                            <div class="list-frame">
+                                <div class="img"><img src="img/music4.jpg" alt=""></div>
+                                <div class="text">wish</div>
+                                <div class="play-btn" data-song="music/Wish-Nikk-(JattZone.com).mp3">
+                                    <div class="icon">
+                                        <i class="ri-play-fill"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list-frame">
+                                <div class="img"><img src="img/music4.jpg" alt=""></div>
+                                <div class="text">
+                                    <p>wish</p>
+                                </div>
+                                <div class="play-btn" data-song="music/Wish-Nikk-(JattZone.com).mp3">
+                                    <div class="icon">
+                                        <i class="ri-play-fill"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list-frame">
+                                <div class="img"><img src="img/music5.jpg" alt=""></div>
+                                <div class="text">
+                                    <p>Hosh</p>
+                                </div>
+                                <div class="play-btn" data-song="music//128-Hosh - Nikk 128 Kbps.mp3">
+                                    <div class="icon">
+                                        <i class="ri-play-fill"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list-frame">
+                                <div class="img"><img src="img/music6.jpg" alt=""></div>
+                                <div class="text">
+                                    <p>Wish</p>
+                                </div>
+                                <div class="play-btn" data-song="music/Wish-Nikk-(JattZone.com).mp3">
+                                    <div class="icon">
+                                        <i class="ri-play-fill"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="music-card-section">
+                        <a href="#">
+                            <h2>Made For Rahul Chaudhary</h2>
+                        </a>
+                        <div class="music-card">
+                            <div class="card">
+                                <div class="img">
+                                    <img src="img/music1.jpg" alt="">
+                                    <button>  <div class="play-btn" data-song="music/Phulkari Karan Randhawa 128 Kbps.mp3">
+                                        <div class="icon">
+                                            <i class="ri-play-fill"></i>
+                                        </div>
+                                    </div></button>
+                                </div>
+                                <div class="heading">
+                                    <h3>Phulkari Karan Randhawa</h3>
+                                </div>
+                                <div class="para">
+                                    <p>Lorem, ipsum dolor </p>
+                                </div>
+
+                            </div>
+                            <div class="card">
+                                <div class="img">
+                                    <img src="img/music10.jpg" alt="">
+                                    <button>  <div class="play-btn" data-song="music/128-Meri Aashiqui - Jubin Nautiyal 128 Kbps.mp3">
+                                        <div class="icon">
+                                            <i class="ri-play-fill"></i>
+                                        </div>
+                                    </div></button>
+                                </div>
+                                <div class="heading">
+                                    <h3>Meri Aashiqui- Ju..</h3>
+                                </div>
+                                <div class="para">
+                                    <p>Lorem, ipsum dolor </p>
+                                </div>
+
+                            </div>
+                            <div class="card">
+                                <div class="img">
+                                    <img src="img/music2.jpg" alt="">
+                                    <button>  <div class="play-btn" data-song="music/128-Badaami Rang - Nikk 128 Kbps.mp3">
+                                        <div class="icon">
+                                            <i class="ri-play-fill"></i>
+                                        </div>
+                                    </div></button>
+                                </div>
+                                <div class="heading">
+                                    <h3>-Badaami Rang - Nikk</h3>
+                                </div>
+                                <div class="para">
+                                    <p>Lorem, ipsum dolor </p>
+                                </div>
+
+                            </div>
+                            <div class="card">
+                                <div class="img"><img src="img/music4.jpg" alt="">
+                                    <button>  <div class="play-btn" data-song="music/Wish-Nikk-(JattZone.com).mp3">
+                                        <div class="icon">
+                                            <i class="ri-play-fill"></i>
+                                        </div>
+                                    </div></button>
+                                </div>
+                                <div class="heading">
+                                    <h3>Wish-Nikk</h3>
+                                </div>
+                                <div class="para">
+                                    <p>Lorem, ipsum dolor </p>
+                                </div>
+
+                            </div>
+                            <div class="card">
+                                <div class="img"><img src="img/music5.jpg" alt="">
+                                    <button>  <div class="play-btn" data-song="music/128-Hosh - Nikk 128 Kbps.mp3">
+                                        <div class="icon">
+                                            <i class="ri-play-fill"></i>
+                                        </div>
+                                    </div></button>
+                                </div>
+                                <div class="heading">
+                                    <h3>-Hosh - Nikk</h3>
+                                </div>
+                                <div class="para">
+                                    <p>Lorem, ipsum dolor </p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!------------------------------------ mussic card section -------------------------------------------------- -->
+                    <div class="music-card-section">
+                        <a href="#">
+                            <h2>yours favorets Artists</h2>
+                        </a>
+                        <div class="music-card">
+                            <div class="card">
+                                <div class="img"><img src="img/music1.jpg" alt="">
+                                    <button>  <div class="play-btn" data-song="music/Phulkari Karan Randhawa 128 Kbps.mp3">
+                                        <div class="icon">
+                                            <i class="ri-play-fill"></i>
+                                        </div>
+                                    </div></button>
+                                </div>
+                                <div class="heading">
+                                    <h3>Phulkari Karan Randhawa </h3>
+                                </div>
+                                <div class="para">
+                                    <p>Lorem, ipsum dolor </p>
+                                </div>
+
+                            </div>
+                            <div class="card">
+                                <div class="img">
+                                    <img src="img/music10.jpg" alt="">
+                                    <button>  <div class="play-btn" data-song="music/128-Meri Aashiqui - Jubin Nautiyal 128 Kbps.mp3">
+                                        <div class="icon">
+                                            <i class="ri-play-fill"></i>
+                                        </div>
+                                    </div></button>
+                                </div>
+                                <div class="heading">
+                                    <h3>Meri Aashiqui - Jubin Nautiyal</h3>
+                                </div>
+                                <div class="para">
+                                    <p>Lorem, ipsum dolor </p>
+                                </div>
+
+                            </div>
+                            <div class="card">
+                                <div class="img"><img src="img/music2.jpg" alt="">
+                                    <button>  <div class="play-btn" data-song="music/128-Badaami Rang - Nikk 128 Kbps.mp3">
+                                        <div class="icon">
+                                            <i class="ri-play-fill"></i>
+                                        </div>
+                                    </div></button>
+                                </div>
+                                <div class="heading">
+                                    <h3>-Badaami Rang - Nikk</h3>
+                                </div>
+                                <div class="para">
+                                    <p>Lorem, ipsum dolor </p>
+                                </div>
+
+                            </div>
+                            <div class="card">
+                                <div class="img"><img src="img/music4.jpg" alt="">
+                                    <button>  <div class="play-btn" data-song="music/Wish-Nikk-(JattZone.com).mp3">
+                                        <div class="icon">
+                                            <i class="ri-play-fill"></i>
+                                        </div>
+                                    </div></button>
+                                </div>
+                                <div class="heading">
+                                    <h3>Wish-Nikk-</h3>
+                                </div>
+                                <div class="para">
+                                    <p>Lorem, ipsum dolor </p>
+                                </div>
+
+                            </div>
+                            <div class="card">
+                                <div class="img"><img src="img/music5.jpg" alt="">
+                                    <button>  <div class="play-btn" data-song="music/128-Hosh - Nikk 128 Kbps.mp3">
+                                        <div class="icon">
+                                            <i class="ri-play-fill"></i>
+                                        </div>
+                                    </div></button>
+                                </div>
+                                <div class="heading">
+                                    <h3>Hosh</h3>
+                                </div>
+                                <div class="para">
+                                    <p>Lorem, ipsum dolor </p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="music-card-section">
+                        <a href="#">
+                            <h2>Recently Played</h2>
+                        </a>
+                        <div class="music-card">
+                            <div class="card">
+                                <div class="img"><img src="img/music7.jpg" alt="">
+                                    <button>  <div class="play-btn" data-song="music/128-Meri Aashiqui - Jubin Nautiyal 128 Kbps.mp3">
+                                        <div class="icon">
+                                            <i class="ri-play-fill"></i>
+                                        </div>
+                                    </div></button>
+                                </div>
+                                <div class="heading">
+                                    <h3>Meri Aashiqui</h3>
+                                </div>
+                                <div class="para">
+                                    <p>Lorem, ipsum dolor </p>
+                                </div>
+
+                            </div>
+                            <div class="card">
+                                <div class="img"><img src="img/music7.jpg" alt="">
+                                    <button>  <div class="play-btn" data-song="music/128-Chaar Chudiyaan - Nikk 128 Kbps.mp3">
+                                        <div class="icon">
+                                            <i class="ri-play-fill"></i>
+                                        </div>
+                                    </div></button>
+                                </div>
+                                <div class="heading">
+                                    <h3>Chaar Chudiyaan</h3>
+                                </div>
+                                <div class="para">
+                                    <p>Lorem, ipsum dolor </p>
+                                </div>
+
+                            </div>
+                            <div class="card">
+                                <div class="img"><img src="img/music8.jpg" alt="">
+                                    <button>  <div class="play-btn" data-song="music/Panghat Roohi 128 Kbps.mp3">
+                                        <div class="icon">
+                                            <i class="ri-play-fill"></i>
+                                        </div>
+                                    </div></button>
+                                </div>
+                                <div class="heading">
+                                    <h3>/Panghat Roohi</h3>
+                                </div>
+                                <div class="para">
+                                    <p>Lorem, ipsum dolor </p>
+                                </div>
+
+                            </div>
+                            <div class="card">
+                                <div class="img"><img src="img/music9.jpg" alt="">
+                                    <button>  <div class="play-btn" data-song="music/128-Husn - Anuv Jain 128 Kbps.mp3">
+                                        <div class="icon">
+                                            <i class="ri-play-fill"></i>
+                                        </div>
+                                    </div></button>
+                                </div>
+                                <div class="heading">
+                                    <h3>Husn - Anuv</h3>
+                                </div>
+                                <div class="para">
+                                    <p>Lorem, ipsum dolor </p>
+                                </div>
+
+                            </div>
+                            <div class="card">
+                                <div class="img"><img src="img/music5.jpg" alt="">
+                                    <button>  <div class="play-btn" data-song="music/128-Chaar Chudiyaan - Nikk 128 Kbps.mp3">
+                                        <div class="icon">
+                                            <i class="ri-play-fill"></i>
+                                        </div>
+                                    </div></button>
+                                </div>
+                                <div class="heading">
+                                    <h3>Chaar Chudiyaan</h3>
+                                </div>
+                                <div class="para">
+                                    <p>Lorem, ipsum dolor </p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- music-control  -->
+        <div class="music-control">
+            <div class="control1">
+                <div class="img"><img src="img/music1.jpg" alt="music"></div>
+                <div class="txt">
+                    <h4>wait</h4>
+                    <p>karan Ahuja</p>
+                </div>
+                <div class="like"><i class="ri-add-circle-fill"></i></div>
+            </div>
+            <div class="control2">
+                <div class="icon-wraper">
+                    <div class="icon">
+                    <i class="fa fa-random" aria-hidden="true"></i>
+                    <i class="ri-skip-left-fill"></i>
+                    <i class="ri-pause-circle-fill"></i>
+                    <i class="ri-skip-right-fill"></i>
+                    <i class="ri-arrow-go-forward-line"></i>
+                </div>
+                </div>
+                <audio id="audio-player" controls>
+                    <input type="range" id="range-slider" value="0" min="0" step="1">
+                </audio>
+            
+            </div>
+            <div class="control3">
+                <i class="fa fa-caret-square-o-right" aria-hidden="true"></i>
+                <i class="ri-mic-fill"></i>
+                <i class="ri-align-justify"></i>
+                <i class="ri-device-fill"></i>
+                <i class="ri-volume-down-fill"></i>
+                <i class="fa fa-clone" aria-hidden="true"></i>
+               <div class="range2">
+                <input type="range" class="slider3">
+               </div>
+               <i class="ri-expand-diagonal-line"></i>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
