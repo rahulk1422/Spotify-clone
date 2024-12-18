@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Sign Up / Login</title>
+    <link rel="icon" type="img/image/x-icon" href="img/fevicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="user.css"> <!-- External CSS for styling -->
+</head>
+<body>
+
+    <div class="background">
+      
+    </div>
+ 
+    <!-- Form Container -->
+    <div class="form-container">
+        <!-- Sign In Form -->
+        <form id="sign-in-form" class="form" action="homepage.html" method="POST">
+            <h2>Sign In</h2>
+            <input type="email" name="email" placeholder="Enter your email" required>
+            <input type="password" name="password" placeholder="Enter your password" required>
+            <button type="submit">Sign In</button>
+            <p>New to Spotify? <a href="javascript:void(0);" id="sign-up-link" style="color: #10c24e;">Sign up now</a></p>
+        </form>
+
+        <!-- Sign Up Form (Initially hidden) -->
+        <form id="sign-up-form" class="form" action="homepage.html" method="POST" style="display: none;">
+            <h2>Sign Up</h2>
+            <input type="email" name="email" placeholder="Enter your email" required>
+            <input type="password" name="password" placeholder="Create a password" required>
+            <button type="submit">Sign Up</button>
+            <p>Already have an account? <a href="javascript:void(0);" id="sign-in-link" style="color: #10c24e;">Sign In</a></p>
+        </form>
+        <a href="index.html" class="back"><button>Back to Music</button></a>
+    </div>
+
+    <script>
+        // JavaScript for toggling between Sign In and Sign Up forms
+        const signUpLink = document.getElementById('sign-up-link');
+        const signInLink = document.getElementById('sign-in-link');
+        const signInForm = document.getElementById('sign-in-form');
+        const signUpForm = document.getElementById('sign-up-form');
+
+        // Show Sign Up form and hide Sign In form when clicking "Sign up now"
+        signUpLink.addEventListener('click', function() {
+            signInForm.style.display = 'none'; // Hide Sign In form
+            signUpForm.style.display = 'block'; // Show Sign Up form
+        });
+
+        // Show Sign In form and hide Sign Up form when clicking "Sign In"
+        signInLink.addEventListener('click', function() {
+            signUpForm.style.display = 'none'; // Hide Sign Up form
+            signInForm.style.display = 'block'; // Show Sign In form
+        });
+    </script>
+
+</body>
+</html>

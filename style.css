@@ -37,8 +37,26 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-}
 
+
+    background: linear-gradient(90deg, #543b73, #543d45, #331f68, #7f0e3d);
+    background-size: 500% 500%;
+    animation: gradient 15s ease infinite;
+    border-radius: 8px;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 50% 100%;
+    }
+}
 .container .side-bar .top i {
     color: rgb(179, 179, 179);
     font-size: large;
@@ -57,6 +75,12 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+
+
+    background: linear-gradient(90deg, #543b73, #543d45, #331f68, #7f0e3d);
+    background-size: 500% 500%;
+    animation: gradient 15s ease infinite;
+    border-radius: 8px;
 }
 
 .container .side-bar .bottom i {
@@ -100,6 +124,10 @@ body {
     border-radius: 10px;
     overflow: hidden;
     overflow-y: scroll;
+    background: linear-gradient(90deg, #925ad7, #f335c3, #342a4e, #f84b12);
+    background-size: 500% 500%;
+    animation: gradient 15s ease infinite;
+    border-radius: 8px;
 }
 
 .container .main-bar::-webkit-scrollbar {
